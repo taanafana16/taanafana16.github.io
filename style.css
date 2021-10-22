@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Scheherazade New', serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: radial-gradient(circle, #f0f0f0, #e8e8e8, #e1e1e1, #d9d9d9, #d2d2d2, #cccccc, #c6c6c6, #c0c0c0, #bababa, #b4b4b4, #aeaeae, #a8a8a8);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    overflow: hidden;
+    position: relative;
+    height: 500px;
+    width: 500px;
+    border: 1px solid rgba(196, 196, 196, 0.5);
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+    background-image: url();
+    background: radial-gradient(at 50% 0%, rgba(0,0,0,0), rgba(255,255,255,0.3));
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.container:hover{
+    backdrop-filter: blur(10px);
+    background: radial-gradient(at 50% 0%, rgba(0,0,0,0), rgba(255,255,255,0.3));
+    box-shadow: 10px 10px 40px rgb(51, 51, 51);
+}
+
+.form{
+    position: relative;
+    z-index: 1;
+    width: 500px;
+    height: 500px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header{
+    text-align: center;
+    font-size: 25px;
+    color: #181818;
+    margin-bottom: 15px;
+}
+
+.header p{
+    text-align: center;
+    font-size: 14px;
+    font-style: initial;
+    color: #272727;
+}
+
+.text-center p{
+    font-size: 14px;
+    font-style: initial;
+    margin-top: 10px;
+    color: #272727;
+}
+
+.username,.password, .name, .email, .confirm_password{
+    width: 250px;
+    text-align: center;
+    padding: 4px 0;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: #282828;
+    background-color: rgba(152,152,152,0.3);
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.username::placeholder, .password::placeholder, .name::placeholder, .email::placeholder, .confirm_password::placeholder{
+    color: rgba(0,0,0,0.5);
+}
+
+.username:focus, .password:focus, .name:focus, .email:focus, .confirm_password:focus{
+    background-color: rgba(152,152,152,1);
+}
+
+.submit{
+    width: 85px;
+    outline: none;
+    border: none;
+    background: rgb(121, 121, 121);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    font-size: 18px;
+    color: whitesmoke;
+    transition: 0.2s;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.submit:hover{
+    background-color: #303030;
+}
+
+.forgot:hover{
+    color: #080808;
+}
+
+i{
+    color: #282828;
+    display: block;
+}
+
+.other{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.other ul{
+    list-style: none;
+}
+
+.other ul li{
+    display: inline-block;
+    cursor: pointer;
+    margin: 5px 5px;
+}
+
+.forgot a{
+    display: block;
+    font-size: small;
+    text-decoration: none;
+    margin-left: 30px;
+    color: #181818;
+}
+
+.other ul li a i{
+    font-size: x-large;
+    color: #282828;
+}
+
+.signup p{
+    text-align: center;
+    font-size: 16px;
+    font-style: initial;
+    color: #272727;
+}
+
+.signup p a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #181818;
+}
