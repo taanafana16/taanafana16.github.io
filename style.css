@@ -9,6 +9,7 @@ body{
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     background: radial-gradient(circle, #f0f0f0, #e8e8e8, #e1e1e1, #d9d9d9, #d2d2d2, #cccccc, #c6c6c6, #c0c0c0, #bababa, #b4b4b4, #aeaeae, #a8a8a8);
     z-index: 1;
     justify-content: center;
@@ -17,12 +18,11 @@ body{
 .container{
     overflow: hidden;
     position: relative;
-    height: 500px;
-    width: 500px;
+    height: 550px;
+    width: 1000px;
     border: 1px solid rgba(196, 196, 196, 0.5);
     border-radius: 30px;
     backdrop-filter: blur(5px);
-    background-image: url();
     background: radial-gradient(at 50% 0%, rgba(0,0,0,0), rgba(255,255,255,0.3));
     box-shadow: 10px 10px 30px rgba(0,0,0,0.3);
     transition: all 0.3s ease-in-out;
@@ -30,15 +30,25 @@ body{
 
 .container:hover{
     backdrop-filter: blur(10px);
-    background: radial-gradient(at 50% 0%, rgba(0,0,0,0), rgba(255,255,255,0.3));
     box-shadow: 10px 10px 40px rgb(51, 51, 51);
+}
+
+.img{
+    float: right;
+    display: block;
+    width: 560px;
+    position: absolute;
+    left: 450px; right: 10px;
+    flex-direction: row;
+    align-items: right;
+    border: 1px solid rgba(196, 196, 196, 0.5);
 }
 
 .form{
     position: relative;
     z-index: 1;
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 550px;
     display:flex;
     align-items: center;
     justify-content: center;
